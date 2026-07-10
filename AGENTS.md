@@ -2,11 +2,16 @@
 
 ## Product goal
 
-Present Aaron's narrow Lovable + Supabase launch-rescue offer and route qualified prospects to a safe, public fit-check issue.
+Present Aaron as an AI app production engineer for both hiring teams and
+fixed-scope rescue clients. Route non-sensitive Supabase questions to a safe,
+public fit-check issue while keeping every portfolio claim evidence-backed.
 
 ## Architecture
 
-This is the special GitHub profile repository for the `VJO-JavaScript` account. `README.md` is the buyer-facing profile. `docs/github-metadata.md` records the recommended account and repository fields.
+This is the special GitHub profile repository for the `VJO-JavaScript` account.
+`README.md` is the public hiring/client profile, `assets/` contains editable
+brand sources, and `docs/github-metadata.md` records the approved account,
+identity, and pin strategy.
 
 ## Commands
 
@@ -18,15 +23,18 @@ This is the special GitHub profile repository for the `VJO-JavaScript` account. 
 
 ## Environment and secrets
 
-No environment variables, tokens, private URLs, customer data, or credentials belong in this repository. The intake route is a public GitHub issue and must warn users accordingly.
+No environment variables, tokens, private URLs, customer data, or credentials
+belong in this repository. The intake route is a public GitHub issue and must
+warn users accordingly.
 
 ## Deployment target
 
-Public GitHub repository `VJO-JavaScript/VJO-JavaScript`. Publishing or changing public account fields requires Aaron's approval and a signed-out link check.
+Public GitHub repository `VJO-JavaScript/VJO-JavaScript`. Publishing or changing
+public account fields requires Aaron's approval and a signed-out link check.
 
 ## Verification checklist
 
-- The flagship repository and every linked document exist publicly.
+- All three selected-work repositories and every linked document exist publicly.
 - The fit-check issue template opens successfully.
 - CI is green before the profile claims CI evidence.
 - The reference-work disclosure remains above the evidence table.
@@ -35,10 +43,11 @@ Public GitHub repository `VJO-JavaScript/VJO-JavaScript`. Publishing or changing
 
 ## Definition of done
 
-The public profile renders cleanly, communicates one narrow outcome, links to working evidence, and routes prospects to a public, privacy-safe fit check.
+The public profile renders cleanly, shows three distinct production-engineering
+proofs, communicates honest assurance boundaries, and routes non-sensitive
+questions to a public, privacy-safe fit check.
 
 ## High-risk files
 
 - `README.md`: public buyer-facing claims and intake warnings.
 - `docs/github-metadata.md`: recommended public account fields.
-

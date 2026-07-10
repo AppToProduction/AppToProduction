@@ -1,29 +1,58 @@
-# I fix launch-blocking access-control failures in Lovable + Supabase apps
+# Aaron — AI app production engineer
 
-I'm Aaron. I focus on one narrow outcome: reproduce a Supabase tenant-isolation failure under realistic user roles, make the smallest safe policy change, and leave behind a regression test, CI evidence, and rollback notes.
+I turn fragile AI-built applications into reviewable production changes across
+authorization, billing state, and release configuration.
 
-[Review the broken-to-fixed RLS proof](https://github.com/VJO-JavaScript/lovable-supabase-rls-rescue) | [Request a public fit check](https://github.com/VJO-JavaScript/lovable-supabase-rls-rescue/issues/new?template=fit-check.yml)
+**Open to fixed-scope rescue work and contract or full-time engineering roles.**
 
-> **Reference-work disclosure:** The linked project uses synthetic tenants and demonstration data. It shows my process and technical approach; it is not client work, and its intentionally vulnerable baseline is never deployed.
+[Review selected work](#selected-work) ·
+[See the Supabase rescue proof][rls-proof] ·
+[Request a public fit check][fit-check]
 
-## What you can verify
+> **Portfolio disclosure:** the projects below use synthetic fixtures and are
+> reference implementations, not client engagements. Their value is in the
+> executable tests, CI runs, source history, and explicit assurance boundaries.
 
-| Evidence | What it shows |
-| --- | --- |
-| [Baseline finding](https://github.com/VJO-JavaScript/lovable-supabase-rls-rescue/blob/main/docs/audit/baseline-findings.md) | The cross-tenant read is reproduced before remediation. |
-| [Remediation ledger](https://github.com/VJO-JavaScript/lovable-supabase-rls-rescue/blob/main/docs/audit/remediation-ledger.md) | The policy change is narrow, documented, and tied to a test. |
-| [Role-accurate CI](https://github.com/VJO-JavaScript/lovable-supabase-rls-rescue/actions) | The same attack path is checked automatically without treating a service role as an end user. |
-| [Rollback runbook](https://github.com/VJO-JavaScript/lovable-supabase-rls-rescue/blob/main/docs/operations/rollback-runbook.md) | The handoff includes recovery steps instead of only a code patch. |
-| [Residual risks](https://github.com/VJO-JavaScript/lovable-supabase-rls-rescue/blob/main/docs/operations/residual-risks.md) | Untested paths and limits remain explicit. |
+## Selected work
 
-## A bounded first engagement
+| Project | Production problem | Evidence you can inspect |
+| --- | --- | --- |
+| [Lovable + Supabase RLS Rescue](https://github.com/VJO-JavaScript/lovable-supabase-rls-rescue) | An auth-only policy leaked another tenant's row; hardened reads and writes now require membership. | Postgres roles, SQL migrations, anon/Alice/Bob CRUD matrix, baseline-to-v1.1 comparison, CI, rollback notes. |
+| [Billing Webhook + Entitlement Rescue](https://github.com/VJO-JavaScript/stripe-entitlements-rescue-reference) | Forged, duplicate, delayed, and out-of-order billing events can drift application access. | TypeScript signature guard, event-ID idempotency, authoritative reconciliation, dead-letter replay, tests and CI. |
+| [Production Parity Gate](https://github.com/VJO-JavaScript/production-parity-gate) | Preview and production can silently diverge in environment contracts, callbacks, readiness paths, and client bundles. | TypeScript CLI and GitHub Action, React/Vite fixture, Markdown + JSON evidence, deterministic tests and CI. |
 
-The best fit is an existing Lovable + Supabase app with one known and already reproducible RLS or tenant-isolation blocker. I work staging-first, use least-privilege access, define the acceptance test before changing code, and deliver the fix through a reviewable branch with evidence and rollback notes.
+## How I work
 
-This is not a whole-app security certification, compliance audit, destructive migration, or authorization to probe a production system.
+1. Reproduce the exact failure with a deterministic test.
+2. Define the smallest observable acceptance condition.
+3. Make the narrowest safe code, policy, or configuration change.
+4. Exercise the same path under realistic roles or failure ordering.
+5. Leave CI evidence, rollback guidance, and residual risks for the handoff.
 
-## Request a fit check
+## Technical focus
 
-[Open a fit-check issue](https://github.com/VJO-JavaScript/lovable-supabase-rls-rescue/issues/new?template=fit-check.yml) with a sanitized description of the broken flow and the outcome you need.
+- TypeScript and JavaScript on Node.js
+- React and Vite build boundaries
+- PostgreSQL and Supabase-style Row Level Security
+- Webhook verification, idempotency, reconciliation, and entitlement state
+- GitHub Actions, deterministic fixtures, JSON/Markdown evidence, and runbooks
 
-**GitHub issues are public. Do not include passwords, API keys, access tokens, production data, customer information, private repository links, or private app URLs.** Use placeholders for anything sensitive. Repository access is neither requested nor required for the initial fit check.
+I do not present a local harness as production certification. Hosted identity,
+provider APIs, infrastructure, performance, and production data paths still
+need authorized staging verification for the real application.
+
+## Work with me
+
+The best first consulting fit is an existing application with one known and
+already reproducible launch blocker. For hiring teams, the repositories above
+show the implementation and review trail rather than a technology-logo list.
+
+[Open a public, redacted fit-check issue](https://github.com/VJO-JavaScript/lovable-supabase-rls-rescue/issues/new?template=fit-check.yml)
+for a non-sensitive scope question.
+
+**GitHub issues are public. Never include passwords, API keys, tokens, private
+repository or staging URLs, customer data, personal data, payment data, or
+proprietary code.**
+
+[rls-proof]: https://github.com/VJO-JavaScript/lovable-supabase-rls-rescue
+[fit-check]: https://github.com/VJO-JavaScript/lovable-supabase-rls-rescue/issues/new?template=fit-check.yml

@@ -1,33 +1,47 @@
-# Recommended GitHub metadata
-
-## Profile repository
-
-- **Repository name:** `VJO-JavaScript`
-- **Visibility:** Public
-- **Description:** `Lovable + Supabase launch rescue: reproducible RLS fixes, role-accurate tests, CI, and rollback evidence.`
-- **Website:** `https://github.com/VJO-JavaScript/lovable-supabase-rls-rescue`
-
-The repository name must exactly match the account name for GitHub to render `README.md` on the public profile.
+# GitHub portfolio metadata
 
 ## Account fields
 
-- **Display name:** `Aaron`
-- **Bio:** `Lovable + Supabase launch rescue | RLS fixes with role-accurate tests, CI & rollback evidence.`
+- **Username:** keep `VJO-JavaScript` until Aaron confirms whether the existing
+  `AaronTroupe` or `aaron-troupe` accounts are his and selects a canonical
+  professional identity.
+- **Display name:** `Aaron | AI App Production Engineer`
+<!-- markdownlint-disable-next-line MD013 -->
+- **Bio:** `AI app production engineer | Supabase, Stripe, React/TypeScript, CI & production reliability | Open to contracts and roles`
 - **Website:** `https://github.com/VJO-JavaScript/lovable-supabase-rls-rescue`
-- **Initial pin:** `lovable-supabase-rls-rescue`
+- **Available for hire:** enabled
+- **Location, company, public email, and social accounts:** leave blank until
+  Aaron explicitly approves accurate public values.
 
-Leave location, employer, achievements, and additional pinned repositories blank unless they are accurate and strengthen the same buyer-facing message.
+## Avatar
 
-## Publication checks
+- Current interim mark: `assets/github-avatar.png`
+- Editable source: `assets/github-avatar.svg`
+- Preferred long-term replacement: a recent, real, square professional
+  headshot supplied and approved by Aaron.
+- Never use a generated fake person as Aaron's identity.
 
-1. Publish the flagship proof before the profile README so no buyer-facing link is broken.
-2. Confirm the fit-check issue template opens and visibly states that the issue is public.
-3. Open every evidence link in a signed-out browser session.
-4. Confirm CI is genuinely green before relying on the CI link.
-5. Verify the profile at desktop and mobile widths.
-6. Pin only the finished flagship proof initially.
+## Profile repository
 
-## License decision
+- **Repository:** `VJO-JavaScript/VJO-JavaScript`
+- **Visibility:** public
+<!-- markdownlint-disable-next-line MD013 -->
+- **Description:** `AI app production engineering portfolio: Supabase/RLS, billing reliability, TypeScript tooling, tests, CI, and recovery evidence.`
 
-No license is included. This repository contains personal profile and service-positioning copy rather than a reusable software package; granting a software license would add little value and could invite reuse of Aaron's identity-specific copy. The flagship code repository should carry its own appropriate software license.
+## Pin order
 
+1. `lovable-supabase-rls-rescue`
+2. `stripe-entitlements-rescue-reference`
+3. `production-parity-gate`
+
+Do not fill the remaining pins with tutorial clones, empty scaffolds, or
+unrelated experiments.
+
+## Remaining identity and conversion decisions
+
+1. Confirm the canonical GitHub account and desired professional username.
+2. Supply a real headshot if Aaron wants maximum personal-trust conversion.
+3. Approve a dedicated professional email or private form before publishing a
+   recruiter/client contact route.
+4. Supply accurate resume, work-history, education, location/timezone,
+   availability, and LinkedIn details before adding them publicly.

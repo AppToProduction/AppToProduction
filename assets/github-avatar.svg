@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512" role="img" aria-labelledby="title description">
+  <title id="title">Aaron database security monogram</title>
+  <desc id="description">A white capital A over an emerald database, contained in a teal shield on a dark navy background.</desc>
+
+  <rect width="512" height="512" fill="#071827"/>
+
+  <path
+    d="M256 70 402 124v116c0 95-59 168-146 204-87-36-146-109-146-204V124L256 70Z"
+    fill="#0B2A3A"
+    stroke="#2DD4BF"
+    stroke-width="24"
+    stroke-linejoin="round"
+  />
+
+  <path
+    d="M168 178v124c0 20 39 36 88 36s88-16 88-36V178H168Z"
+    fill="#0F766E"
+  />
+  <ellipse cx="256" cy="178" rx="88" ry="32" fill="#2DD4BF"/>
+  <path
+    d="M168 236c0 20 39 36 88 36s88-16 88-36M168 290c0 20 39 36 88 36s88-16 88-36"
+    fill="none"
+    stroke="#5EEAD4"
+    stroke-width="12"
+  />
+
+  <path
+    d="M256 158 332 342h-42l-15-40h-38l-15 40h-42l76-184Zm-9 113h18l-9-25-9 25Z"
+    fill="#FFFFFF"
+    fill-rule="evenodd"
+  />
+</svg>
