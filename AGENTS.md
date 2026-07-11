@@ -2,13 +2,14 @@
 
 ## Product goal
 
-Present Aaron as an AI app production engineer for both hiring teams and
-fixed-scope rescue clients. Route non-sensitive Supabase questions to a safe,
-public fit-check issue while keeping every portfolio claim evidence-backed.
+Present Aaron and App to Production as an accountable production-engineering
+profile for both hiring teams and fixed-scope clients. Route non-sensitive
+project questions to a safe, public fit-check issue while keeping every
+portfolio claim evidence-backed.
 
 ## Architecture
 
-This is the special GitHub profile repository for the `VJO-JavaScript` account.
+This is the special GitHub profile repository for the `AppToProduction` account.
 `README.md` is the public hiring/client profile, `assets/` contains editable
 brand sources, and `docs/github-metadata.md` records the approved account,
 identity, and pin strategy.
@@ -29,7 +30,7 @@ warn users accordingly.
 
 ## Deployment target
 
-Public GitHub repository `VJO-JavaScript/VJO-JavaScript`. Publishing or changing
+Public GitHub repository `AppToProduction/AppToProduction`. Publishing or changing
 public account fields requires Aaron's approval and a signed-out link check.
 
 ## Verification checklist

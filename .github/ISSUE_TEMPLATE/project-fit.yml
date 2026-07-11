@@ -1,0 +1,95 @@
+name: Public project fit check
+description: Check whether one redacted production blocker is a possible fit.
+title: "[Fit check] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        This issue is public. Describe the failure without sharing credentials,
+        private URLs, proprietary code, customer data, production payloads, or
+        security-sensitive implementation details.
+
+        A fit check is not a commitment, quote, security assessment, or guarantee.
+
+  - type: dropdown
+    id: engagement
+    attributes:
+      label: What kind of conversation is this?
+      options:
+        - Fixed-scope production blocker
+        - Contract engineering role
+        - Full-time engineering role
+        - Public reference question
+    validations:
+      required: true
+
+  - type: input
+    id: stack
+    attributes:
+      label: Public stack summary
+      description: Product names and technologies only; do not include private URLs or credentials.
+      placeholder: React, TypeScript, Supabase, Stripe, Vercel
+    validations:
+      required: true
+
+  - type: textarea
+    id: blocker
+    attributes:
+      label: One reproducible blocker
+      description: What happens, and what did you expect instead?
+      placeholder: A redacted description of one observed failure.
+    validations:
+      required: true
+
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Observable acceptance condition
+      description: What result would let you call this blocker resolved?
+      placeholder: A testable, non-sensitive outcome.
+    validations:
+      required: true
+
+  - type: dropdown
+    id: environment
+    attributes:
+      label: Safe test environment
+      options:
+        - A non-production environment is available
+        - A non-production environment can be created
+        - Not sure yet
+        - Production-only access
+    validations:
+      required: true
+
+  - type: dropdown
+    id: authority
+    attributes:
+      label: Authority to request work
+      options:
+        - I own the codebase
+        - I am authorized by the owner or employer
+        - I need to clarify this first
+    validations:
+      required: true
+
+  - type: dropdown
+    id: commercial
+    attributes:
+      label: Commercial path
+      options:
+        - Paid fixed-scope work
+        - Paid hourly or contract work
+        - Employment role
+        - Public question only
+        - Not sure yet
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: safety
+    attributes:
+      label: Public-data confirmation
+      options:
+        - label: I removed secrets, private links, customer data, production payloads, and proprietary code.
+          required: true

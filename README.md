@@ -1,58 +1,85 @@
-# Aaron — AI app production engineer
+# App to Production
 
-I turn fragile AI-built applications into reviewable production changes across
-authorization, billing state, and release configuration.
+**I stabilize AI-built apps when the demo works but launch does not.**
 
-**Open to fixed-scope rescue work and contract or full-time engineering roles.**
+I'm Aaron. If you built with Lovable or another AI coding tool and now have a
+known Supabase, Stripe, or deployment blocker, I work inside the existing
+codebase to produce the smallest test-backed change that addresses the failure
+and leaves a clear handoff.
 
-[Review selected work](#selected-work) ·
-[See the Supabase rescue proof][rls-proof] ·
-[Request a public fit check][fit-check]
+**Best fit:** one reproducible launch blocker, an owned codebase, and a safe
+non-production environment.
+
+[Inspect the proof](#production-proof-you-can-run) ·
+[Open a redacted fit check][fit-check] ·
+[See how I work](#how-i-work)
+
+**Available for fixed-scope contracts and contract or full-time engineering roles.**
 
 > **Portfolio disclosure:** the projects below use synthetic fixtures and are
 > reference implementations, not client engagements. Their value is in the
 > executable tests, CI runs, source history, and explicit assurance boundaries.
 
-## Selected work
+## Does this look like your blocker?
 
-| Project | Production problem | Evidence you can inspect |
+- A signed-in customer can read or change another tenant's data.
+- Stripe and application access disagree after duplicate, delayed, or
+  out-of-order webhook deliveries.
+- Preview works, but production fails because environment contracts, callback
+  URLs, API paths, readiness checks, or client bundles have drifted.
+
+Those are the failure classes demonstrated in the repositories below.
+
+## Production proof you can run
+
+| Proof project | Failure addressed | Evidence you can inspect |
 | --- | --- | --- |
-| [Lovable + Supabase RLS Rescue](https://github.com/VJO-JavaScript/lovable-supabase-rls-rescue) | An auth-only policy leaked another tenant's row; hardened reads and writes now require membership. | Postgres roles, SQL migrations, anon/Alice/Bob CRUD matrix, baseline-to-v1.1 comparison, CI, rollback notes. |
-| [Billing Webhook + Entitlement Rescue](https://github.com/VJO-JavaScript/stripe-entitlements-rescue-reference) | Forged, duplicate, delayed, and out-of-order billing events can drift application access. | TypeScript signature guard, event-ID idempotency, authoritative reconciliation, dead-letter replay, tests and CI. |
-| [Production Parity Gate](https://github.com/VJO-JavaScript/production-parity-gate) | Preview and production can silently diverge in environment contracts, callbacks, readiness paths, and client bundles. | TypeScript CLI and GitHub Action, React/Vite fixture, Markdown + JSON evidence, deterministic tests and CI. |
+| [Lovable + Supabase RLS Rescue][rls-proof] | An auth-only policy exposes another tenant's row. | Preserved broken baseline, tenant-scoped read/write migrations, anon/Alice/Bob test matrix, CI, rollback notes. |
+| [Billing Webhook + Entitlement Rescue][billing-proof] | Forged, duplicate, delayed, or out-of-order billing events make application access drift. | Signature guard, event-ID idempotency, authoritative reconciliation, dead-letter replay, deterministic tests and CI. |
+| [Production Parity Gate][parity-proof] | Preview and production silently diverge. | TypeScript CLI and GitHub Action covering seven modeled drift classes, React/Vite fixture, JSON and Markdown evidence, tests and CI. |
+
+Each repository includes a short reviewer path, executable fixtures, operations
+notes, and an explicit statement of what the proof does—and does not—establish.
 
 ## How I work
 
 1. Reproduce the exact failure with a deterministic test.
-2. Define the smallest observable acceptance condition.
+2. Define one observable acceptance condition.
 3. Make the narrowest safe code, policy, or configuration change.
-4. Exercise the same path under realistic roles or failure ordering.
-5. Leave CI evidence, rollback guidance, and residual risks for the handoff.
+4. Exercise the affected path under realistic roles or failure ordering.
+5. Leave CI evidence, rollback guidance, residual risks, and a maintainable
+   handoff.
 
-## Technical focus
+I work from the existing application rather than treating every problem as a
+blank-slate rebuild.
+
+## Engineering focus
 
 - TypeScript and JavaScript on Node.js
-- React and Vite build boundaries
+- React and Vite release boundaries
 - PostgreSQL and Supabase-style Row Level Security
 - Webhook verification, idempotency, reconciliation, and entitlement state
-- GitHub Actions, deterministic fixtures, JSON/Markdown evidence, and runbooks
+- GitHub Actions, deterministic fixtures, structured evidence, and runbooks
 
-I do not present a local harness as production certification. Hosted identity,
-provider APIs, infrastructure, performance, and production data paths still
-need authorized staging verification for the real application.
+For hiring teams, the repositories show the implementation and review trail:
+root cause, source changes, tests, CI, operating limits, and recovery guidance.
 
-## Work with me
+## Assurance boundary
 
-The best first consulting fit is an existing application with one known and
-already reproducible launch blocker. For hiring teams, the repositories above
-show the implementation and review trail rather than a technology-logo list.
+A passing local harness is not production certification. Hosted identity,
+provider APIs, infrastructure, performance, migrations, and production data
+paths still require authorized staging verification for the real application.
 
-[Open a public, redacted fit-check issue](https://github.com/VJO-JavaScript/lovable-supabase-rls-rescue/issues/new?template=fit-check.yml)
-for a non-sensitive scope question.
+## Start with the blocker
+
+If the application already has one known and reproducible launch blocker, open
+a [public, redacted project fit check][fit-check].
 
 **GitHub issues are public. Never include passwords, API keys, tokens, private
-repository or staging URLs, customer data, personal data, payment data, or
-proprietary code.**
+repository or staging URLs, customer data, personal data, payment data,
+proprietary code, or production payloads.**
 
-[rls-proof]: https://github.com/VJO-JavaScript/lovable-supabase-rls-rescue
-[fit-check]: https://github.com/VJO-JavaScript/lovable-supabase-rls-rescue/issues/new?template=fit-check.yml
+[rls-proof]: https://github.com/AppToProduction/lovable-supabase-rls-rescue
+[billing-proof]: https://github.com/AppToProduction/stripe-entitlements-rescue-reference
+[parity-proof]: https://github.com/AppToProduction/production-parity-gate
+[fit-check]: https://github.com/AppToProduction/AppToProduction/issues/new?template=project-fit.yml

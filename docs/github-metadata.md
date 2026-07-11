@@ -2,31 +2,50 @@
 
 ## Account fields
 
-- **Username:** keep `VJO-JavaScript` until Aaron confirms whether the existing
-  `AaronTroupe` or `aaron-troupe` accounts are his and selects a canonical
-  professional identity.
-- **Display name:** `Aaron | AI App Production Engineer`
+- **Username:** `AppToProduction`
+- **Display name:** `Aaron | App to Production`
 <!-- markdownlint-disable-next-line MD013 -->
-- **Bio:** `AI app production engineer | Supabase, Stripe, React/TypeScript, CI & production reliability | Open to contracts and roles`
-- **Website:** `https://github.com/VJO-JavaScript/lovable-supabase-rls-rescue`
+- **Bio:** `I stabilize Lovable/AI-built apps for launch—Supabase access, Stripe billing, React/Vite releases, tests, CI, rollback. Contracts & roles.`
+<!-- markdownlint-disable-next-line MD013 -->
+- **Website:** `https://github.com/AppToProduction/AppToProduction/issues/new?template=project-fit.yml`
 - **Available for hire:** enabled
-- **Location, company, public email, and social accounts:** leave blank until
-  Aaron explicitly approves accurate public values.
+- **Location, company, public email, and social accounts:** blank until Aaron
+  explicitly approves accurate public values.
+
+## Naming decision
+
+`AppToProduction` is the founder-facing specialist handle. It communicates the
+paid transformation without the price-compressed `fix`, `rescue`, or `vibe`
+positioning and remains broad enough for authorization, billing, deployment,
+testing, and production reliability work.
+
+The July 10, 2026 pre-rename screen found:
+
+- GitHub's authenticated rename form accepted the handle.
+- Exact `.com`, `.dev`, `.io`, and `.co` DNS checks had no A record.
+- The exact `.com` had no Verisign RDAP registry record.
+- An exact USPTO wordmark search returned no result.
+- Exact-match web and GitHub searches found no established software company or
+  product using the name.
+
+These checks reduce collision risk but are not trademark clearance or a domain
+reservation.
 
 ## Avatar
 
-- Current interim mark: `assets/github-avatar.png`
+- Current accountable mark: `assets/github-avatar.png`
 - Editable source: `assets/github-avatar.svg`
-- Preferred long-term replacement: a recent, real, square professional
-  headshot supplied and approved by Aaron.
-- Never use a generated fake person as Aaron's identity.
+- The capital A represents both Aaron and App to Production; the database and
+  shield reinforce the authorization and production-reliability focus.
+- A real, recent professional headshot may replace it later if Aaron supplies
+  and approves one. Never use a generated fake person as Aaron's identity.
 
 ## Profile repository
 
-- **Repository:** `VJO-JavaScript/VJO-JavaScript`
+- **Repository:** `AppToProduction/AppToProduction`
 - **Visibility:** public
 <!-- markdownlint-disable-next-line MD013 -->
-- **Description:** `AI app production engineering portfolio: Supabase/RLS, billing reliability, TypeScript tooling, tests, CI, and recovery evidence.`
+- **Description:** `App to Production: test-backed stabilization for AI-built apps across Supabase access, Stripe billing, React/Vite releases, CI, and rollback.`
 
 ## Pin order
 
@@ -37,11 +56,9 @@
 Do not fill the remaining pins with tutorial clones, empty scaffolds, or
 unrelated experiments.
 
-## Remaining identity and conversion decisions
+## Conversion boundary
 
-1. Confirm the canonical GitHub account and desired professional username.
-2. Supply a real headshot if Aaron wants maximum personal-trust conversion.
-3. Approve a dedicated professional email or private form before publishing a
-   recruiter/client contact route.
-4. Supply accurate resume, work-history, education, location/timezone,
-   availability, and LinkedIn details before adding them publicly.
+The public fit-check is an intentionally redacted first contact, not a place to
+share a private repository, staging URL, credentials, customer data, payment
+data, or proprietary code. Private intake and paid-work terms require a separate
+approved channel.
