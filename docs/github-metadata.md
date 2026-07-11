@@ -7,7 +7,8 @@
 <!-- markdownlint-disable-next-line MD013 -->
 - **Bio:** `I stabilize Lovable/AI-built apps for launch—Supabase access, Stripe billing, React/Vite releases, tests, CI, rollback. Contracts & roles.`
 <!-- markdownlint-disable-next-line MD013 -->
-- **Website:** `https://github.com/AppToProduction/AppToProduction/issues/new?template=project-fit.yml`
+- **Website:** blank until a concise, owned public site or intake domain exists;
+  the raw issue-template URL rendered poorly in the profile sidebar.
 - **Available for hire:** enabled
 - **Location, company, public email, and social accounts:** blank until Aaron
   explicitly approves accurate public values.
